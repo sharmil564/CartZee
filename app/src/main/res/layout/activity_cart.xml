@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".cart.CartActivity">
+    <RelativeLayout
+        android:id="@+id/rllay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/totamnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Amount "
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:layout_margin="10dp" />
+
+     </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rllay"
+        android:layout_above="@+id/nxt"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
+    <Button
+        android:id="@+id/nxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:textSize="20dp"
+        android:text="Next"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:layout_margin="15dp"/>
+
+</RelativeLayout>

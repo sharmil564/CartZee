@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "216542688533",
+    "project_id": "cartzeee",
+    "storage_bucket": "cartzeee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:216542688533:android:a5b115c610fdddd2f6a51c",
+        "android_client_info": {
+          "package_name": "com.syed.cartzee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "216542688533-elickkc1o0pj3rnrerfpg2164kmct0j0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPJzjMzjSLHFhRY2qJj0WfsRWy7K9UqNk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "216542688533-elickkc1o0pj3rnrerfpg2164kmct0j0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

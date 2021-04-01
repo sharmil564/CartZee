@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CartZee</string>
+    <string-array name="dresses">
+        <item>Mens TShirt</item>
+        <item>Mens TShirt Checked</item>
+        <item>Sareee</item>
+        <item>Set 4 Kids TShirt</item>
+    </string-array>
+    <string-array name="description">
+        <item>Solid Men Polo Neck White, Black T-Shirt</item>
+        <item>Solid Men Hooded Neck Black T-Shirt</item>
+        <item>Embroidered Banarasi Net, Velvet Saree</item>
+        <item>Kids cotton set 4 Tshirts</item>
+    </string-array>
+    <string-array name="price">
+        <item>499</item>
+        <item>399</item>
+        <item>449</item>
+        <item>699</item>
+    </string-array>
+</resources>
