@@ -24,7 +24,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.syed.cartzee.FBase.UserHelperClass;
-
 public class Register_page extends AppCompatActivity {
 
     EditText fname,lname,addr,mob,mail,dob,pwd,pwd1;
@@ -33,7 +32,7 @@ public class Register_page extends AppCompatActivity {
     RadioGroup rg;
     Button bsubmit;
     String fn,ln,ad,mb,db,pd,pd1,ml;
-    String ged;
+    String ged,uid;
     FirebaseAuth fAuth;
     FirebaseDatabase fBase;
     DatabaseReference dRef;
@@ -220,6 +219,7 @@ public class Register_page extends AppCompatActivity {
                 public void onComplete(@NonNull Task<AuthResult> task) {
                     if (task.isSuccessful()) {
                         Toast.makeText(Register_page.this, "User Created Successfully", Toast.LENGTH_SHORT).show();
+                        crAcc();
                         Intent ss = new Intent(Register_page.this, HomePage.class);
                         startActivity(ss);
                         finish();
@@ -228,10 +228,12 @@ public class Register_page extends AppCompatActivity {
                     }
                 }
             });
-            dRef=fBase.getReference().child("Users");
-            UserHelperClass helperClass=new UserHelperClass(fn,ln,ged,db,ad,mb,ml,pd);
-            dRef.child(mb).setValue(helperClass);
-
         }
+    }
+    private void crAcc() {
+        dRef=fBase.getReference().child("Users");
+        uid=FirebaseAuth.getInstance().getUid();
+        UserHelperClass helperClass=new UserHelperClass(fn,ln,ged,db,ad,mb,ml,pd);
+        dRef.child(uid).child("Details").setValue(helperClass);
     }
 }

@@ -8,19 +8,23 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TableLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
 import com.syed.cartzee.Description;
+import com.syed.cartzee.FBase.HelperClass;
 import com.syed.cartzee.R;
+import com.syed.cartzee.Register_page;
 
 public class myAdapter extends RecyclerView.Adapter<myAdapter.myViewHolder> {
     String data1[],data2[],pri1[];
     int images[];
     Context context;
-
     public myAdapter(Context ct,String s[],String s1[],String pri[],int image[])
     {
         context=ct;

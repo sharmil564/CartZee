@@ -64,6 +64,7 @@
         android:backgroundTint="@android:color/holo_blue_light"
         android:fontFamily="@font/alegreya_sc_black_italic"
         android:text="Login"
+        app:cornerRadius="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

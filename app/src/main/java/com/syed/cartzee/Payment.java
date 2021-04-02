@@ -10,9 +10,13 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 import com.razorpay.Checkout;
 import com.razorpay.PaymentData;
 import com.razorpay.PaymentResultWithDataListener;
+import com.syed.cartzee.FBase.HelperClass;
+import com.syed.cartzee.FBase.UserHelperClass;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -24,6 +28,7 @@ public class Payment extends AppCompatActivity implements PaymentResultWithDataL
     TextView t1;
     int amount;
     Button b1,b2;
+    DatabaseReference dRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +49,7 @@ public class Payment extends AppCompatActivity implements PaymentResultWithDataL
             public void onClick(View v) {
                 Intent i=new Intent(Payment.this,cod.class);
                 startActivity(i);
+
             }
         });
         b2.setOnClickListener(new View.OnClickListener() {
@@ -76,6 +82,8 @@ public class Payment extends AppCompatActivity implements PaymentResultWithDataL
         builder.setMessage(s);
         builder.show();
     }
+
+
 
     @Override
     public void onPaymentError(int i, String s, PaymentData paymentData) {
