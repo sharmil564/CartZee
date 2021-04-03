@@ -67,6 +67,7 @@ public class Payment extends AppCompatActivity implements PaymentResultWithDataL
                     object.put("prefill.contact", "1234567890");
                     object.put("amount", amount);
                     object.put("prefill.email", "sharmil564@gmail.com");
+                    object.put("send_sms_hash",true);
                     checkout.open(Payment.this,object);
                 }catch (JSONException e)
                 {
@@ -82,7 +83,6 @@ public class Payment extends AppCompatActivity implements PaymentResultWithDataL
         builder.setMessage(s);
         builder.show();
     }
-
 
 
     @Override

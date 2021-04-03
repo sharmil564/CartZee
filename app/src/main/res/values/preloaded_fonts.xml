@@ -2,6 +2,7 @@
 <resources>
     <array name="preloaded_fonts" translatable="false">
         <item>@font/adamina</item>
+        <item>@font/aldrich</item>
         <item>@font/alegreya_sc_black_italic</item>
         <item>@font/alegreya_sc_italic</item>
         <item>@font/bigshot_one</item>

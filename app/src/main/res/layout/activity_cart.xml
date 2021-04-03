@@ -10,14 +10,19 @@
         android:id="@+id/rllay"
         android:layout_width="match_parent"
         android:layout_height="50dp">
+
         <TextView
-            android:id="@+id/totamnt"
+            android:id="@+id/tit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Total Amount "
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/adamina"
+            android:text="My Cart"
             android:textAlignment="center"
-            android:textSize="20dp"
-            android:layout_margin="10dp" />
+            android:textSize="20dp" />
 
      </RelativeLayout>
     <androidx.recyclerview.widget.RecyclerView
@@ -25,18 +30,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/rllay"
-        android:layout_above="@+id/nxt"
+        android:layout_above="@+id/hmnxt"
         >
 
     </androidx.recyclerview.widget.RecyclerView>
+
     <Button
-        android:id="@+id/nxt"
+        android:id="@+id/hmnxt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:textSize="20dp"
-        android:text="Next"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
         android:backgroundTint="@android:color/holo_blue_light"
-        android:layout_margin="15dp"/>
+        android:fontFamily="@font/adamina"
+        android:text="Back to Home"
+        android:textSize="15dp" />
 
 </RelativeLayout>

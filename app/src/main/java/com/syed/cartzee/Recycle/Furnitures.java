@@ -8,18 +8,21 @@ import android.os.Bundle;
 
 import com.syed.cartzee.R;
 
-public class dress extends AppCompatActivity {
+public class Furnitures extends AppCompatActivity {
+
     RecyclerView recyclerView;
     String s[],s1[],pri[];
-    int images[]={R.drawable.pic1,R.drawable.pic2,R.drawable.pic3,R.drawable.pic4,R.drawable.pic5,R.drawable.pic6};
+    int images[]={R.drawable.fpic1,R.drawable.fpic2,R.drawable.fpic3,R.drawable.fpic4,R.drawable.fpic5};
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dress);
-        s=getResources().getStringArray(R.array.dresses);
-        s1=getResources().getStringArray(R.array.description);
-        pri=getResources().getStringArray(R.array.price);
-        recyclerView=findViewById(R.id.recycle);
+        setContentView(R.layout.activity_furnitures);
+        s=getResources().getStringArray(R.array.furnitures);
+        s1=getResources().getStringArray(R.array.furnDes);
+        pri=getResources().getStringArray(R.array.furnprice);
+        recyclerView=findViewById(R.id.recycle2);
         myAdapter myAdapter=new myAdapter(this,s,s1,pri,images);
         recyclerView.setAdapter(myAdapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

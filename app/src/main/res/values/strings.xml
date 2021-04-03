@@ -5,17 +5,90 @@
         <item>Mens TShirt Checked</item>
         <item>Sareee</item>
         <item>Set 4 Kids TShirt</item>
+        <item>Mens Formal</item>
+        <item>Infant Wear</item>
     </string-array>
+    <string-array name="mobiles">
+        <item>Poco X2</item>
+        <item>Iphone 12 Pro Max</item>
+        <item>Samsung S21 Ultra</item>
+        <item>Realme X7</item>
+        <item>Mi 10 5G</item>
+    </string-array>
+    <string-array name="furnitures">
+        <item>Mattress</item>
+        <item>Study Table</item>
+        <item>Wall Shelve</item>
+        <item>Table Cover</item>
+        <item>TV Stand</item>
+    </string-array>
+    <string-array name="Appliances">
+        <item>Washing Machine</item>
+        <item>Television</item>
+        <item>Refridgerator</item>
+        <item>Microwave Oven</item>
+        <item>Mixer Grinder</item>
+    </string-array>
+
+
     <string-array name="description">
         <item>Solid Men Polo Neck White, Black T-Shirt</item>
         <item>Solid Men Hooded Neck Black T-Shirt</item>
         <item>Embroidered Banarasi Net, Velvet Saree</item>
         <item>Kids cotton set 4 Tshirts</item>
+        <item>Men Slim Fit Solid Formal Shirt</item>
+        <item>Romper For Baby Boys Casual Printed Pure Cotton  (Beige, Pack of 1)</item>
     </string-array>
+    <string-array name="mobDes">
+        <item>8GB RAM 256GB ROM 4G mobile with 27W Fast Charging and Snapdragon 730G Processor</item>
+        <item>128GB ROM 5G mobile with A14 Bionic chip and QLED Display</item>
+        <item>8GB RAM 256GB ROM 5G mobile with 5000MAH battery and Exynos 21000 Processor</item>
+        <item>6GB RAM 128GB ROM 5G mobile with AMOLED Display and Mediatek 800U Processor</item>
+        <item>8GB RAM 256GB ROM 5G mobile with 30W Fast Charging and Snapdragon 865 Processor</item>
+    </string-array>
+    <string-array name="furnDes">
+        <item>Amore International Bond Dual 5.5 inch Single Bonded Foam Mattress</item>
+        <item>eduway Ludo-Multicolor Engineered Wood Study Table  (Finish Color - Multi-color)</item>
+        <item>WORA Multipurpose Key Holders and Storage Racks Particle Board Wall Shelf  (Number of Shelves - 1, White)</item>
+        <item>Tagve Floral 6 Seater Table Cover  (Transparent, PVC)</item>
+        <item>Nilkamal Beaumont Engineered Wood TV Entertainment Unit  (Finish Color - Wenge)</item>
+    </string-array>
+    <string-array name="applDes">
+        <item>SAMSUNG 6 kg 5 star Inverter Fully Automatic Front Load with In-built Heater White  (WW60R20GLMA/TL)</item>
+        <item>OnePlus Y Series 80 cm (32 inch) HD Ready LED Smart Android TV  (32HA0A00)</item>
+        <item>SAMSUNG 198 L Direct Cool Single Door 4 Star Refrigerator with Base Drawer  (Camellia Blue, RR21T2H2XCU/HL)</item>
+        <item>Whirlpool 20 L Convection Microwave Oven  (Magicook Pro 22CE, Black)</item>
+        <item>Morphy Richards Superb Icon 750 W Mixer Grinder  (Silver, 4 Jars)</item>
+    </string-array>
+
+
     <string-array name="price">
         <item>499</item>
         <item>399</item>
         <item>449</item>
         <item>699</item>
+        <item>599</item>
+        <item>359</item>
+    </string-array>
+    <string-array name="mobprice">
+        <item>14999</item>
+        <item>125000</item>
+        <item>105999</item>
+        <item>19999</item>
+        <item>54999</item>
+    </string-array>
+    <string-array name="furnprice">
+        <item>26003</item>
+        <item>285</item>
+        <item>279</item>
+        <item>298</item>
+        <item>8044</item>
+    </string-array>
+    <string-array name="applprice">
+        <item>21990</item>
+        <item>15499</item>
+        <item>16150</item>
+        <item>9240</item>
+        <item>3099</item>
     </string-array>
 </resources>

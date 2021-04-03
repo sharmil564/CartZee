@@ -16,11 +16,12 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.syed.cartzee.FBase.HelperClass;
 import com.syed.cartzee.FBase.UserHelperClass;
 import com.syed.cartzee.Recycle.myAdapter;
+import com.syed.cartzee.cart.CartActivity;
 
 public class Description extends AppCompatActivity  {
     ImageView v1;
     TextView t1,t2,t3;
-    Button b1,b2;
+    Button b1,b2,b3;
     String s1,s2,s3;
     DatabaseReference dRef;
     @Override
@@ -33,6 +34,14 @@ public class Description extends AppCompatActivity  {
         t3=findViewById(R.id.textView7);
         b1=findViewById(R.id.buy1);
         b2=findViewById(R.id.crt);
+        b3=findViewById(R.id.crct);
+        b3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(Description.this, CartActivity.class);
+                startActivity(i);
+            }
+        });
         dRef= FirebaseDatabase.getInstance().getReference();
         getData();
         b1.setOnClickListener(new View.OnClickListener() {
